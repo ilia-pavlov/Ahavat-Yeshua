@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isTabBarHidden = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            HomeView()
+                .tabItem {
+                    TabBarItem(icon: .house)
+                }
+            BibleStudyView()
+                .tabItem {
+                    TabBarItem(icon: .book)
+                    
+                }
+            ExploreView()
+                .tabItem {
+                    TabBarItem(icon: .globe)
+                }
         }
-        .padding()
     }
 }
 
