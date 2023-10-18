@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 20) {
                 Spacer()
                 Text("Welcome to Our Church")
@@ -17,21 +17,28 @@ struct HomeView: View {
                                 
                 HStack(spacing: 20) {
                     NavigationLink(destination: BibleReadingView()) {
-                        SquareView(iconName: "book", label: "Bible Reading")
+                        SquareView(iconName: "book", 
+                                   label: "Bible Reading",
+                                   foregroundColor: .green)
                     }
                     
                     NavigationLink(destination: ProfileView()) {
-                        SquareView(iconName: "person.circle", label: "Profile")
+                        SquareView(iconName: "person.circle", 
+                                   label: "Profile")
                     }
                 }
                 
                 HStack(spacing: 20) {
                     NavigationLink(destination: DonationView()) {
-                        SquareView(iconName: "creditcard", label: "Donation")
+                        SquareView(iconName: "creditcard", 
+                                   label: "Donation",
+                                   foregroundColor: .orange)
                     }
                     
                     NavigationLink(destination: LiveStreamView()) {
-                        SquareView(iconName: "play.circle", label: "Live Stream")
+                        SquareView(iconName: "play.circle",
+                                   label: "Live Stream",
+                                   foregroundColor: .red)
                     }
                 }
                 

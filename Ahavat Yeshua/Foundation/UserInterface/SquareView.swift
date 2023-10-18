@@ -19,13 +19,12 @@ struct SquareView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
-                .foregroundColor(foregroundColor)
-            
             Text(label)
                 .font(.headline)
                 .multilineTextAlignment(.center)
         }
         .frame(width: 160, height: 160)
+        .foregroundColor(foregroundColor)
         .background(backgroundColor)
         .cornerRadius(10)
         .shadow(radius: 5)

@@ -68,7 +68,7 @@ struct BibleVerseView: View {
                 // Alert for other invalid input
                 return Alert(
                     title: Text("Error"),
-                    message: Text("Invalid Format - (\(viewModel.passage)), Please use the format (John 3:16')"),
+                    message: Text("Invalid Format - (\(viewModel.passage)), Please use the format (John 3:16)"),
                     dismissButton: .default(Text("OK")) {
                         viewModel.passage = "John 3:16"
                     }

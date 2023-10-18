@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-import SwiftUI
+enum LoadState {
+    case loaded
+    case loading
+    case error
+}
 
 class BibleVerseViewModel: ObservableObject {
     @Published var verse: BibleVerseModel?
@@ -18,19 +22,17 @@ class BibleVerseViewModel: ObservableObject {
     @Published var verseReference = ""
     
     private var randomQuery: String = "?random=verse"
-    
+        
+    @MainActor
     func fetchVerse(random: Bool = false) {
+        let formattedPassage: String = passage.replacingOccurrences(of: " ", with: "%20")
         Task {
             do {
-                let fetchedVerse = try await BibleNetwork.shared.fetchVerse(for: random ? randomQuery : passage)
-                DispatchQueue.main.async { // Switch to the main thread
-                    self.verse = fetchedVerse
-                }
-            } catch {
-                DispatchQueue.main.async { // Switch to the main thread
-                    self.alertMessage = "Error: \(error)"
-                    self.showAlert = true
-                }
+                self.verse = try await BibleNetwork.shared.fetchVerse(for: random ? randomQuery : formattedPassage)
+            } catch let error {
+                self.alertMessage = "Error: \(error)"
+                self.showAlert = true
+                print("Error: \(error.localizedDescription.debugDescription)")
             }
         }
     }

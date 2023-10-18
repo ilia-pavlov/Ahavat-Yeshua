@@ -9,6 +9,7 @@ import Foundation
 
 class BibleNetwork {
     static let shared = BibleNetwork()
+//    private var requestSender: RequestSending
     
     private let baseURL = "https://bible-api.com"
     
@@ -16,6 +17,40 @@ class BibleNetwork {
         case invalidURL
         case noData
     }
+
+    // TODO: refactor network to use dependencyResolving
+    
+//    init(requestSender: RequestSending) {
+//        self.requestSender = requestSender
+//    }
+    
+    
+//    func makeVerseRequest(verseInput: String) throws -> RequestMaker {
+//        var urlComponent = URLComponents(scheme: "https", hostResource: "//bible-api.com", path: " ")
+//        let queryItem: URLQueryItem = .init(name: "verse", value: verseInput)
+//        urlComponent.queryItems = [queryItem]
+//        
+//        let requestMaker: RequestMaker = .init(urlComponent: urlComponent)
+//        requestMaker.assign(httpRequestMethod: .get)
+//        return requestMaker
+//    }
+    
+//    public func fetchBibleVerse(verseInput: String) async throws -> BibleVerseModel {
+//        let requestMaker: RequestMaker
+//        do {
+//            requestMaker = try makeVerseRequest(verseInput: verseInput)
+//        }
+//        catch let error {
+//            throw GenericNetworkError.requestBodyNotJsonEncodable(reason: error.localizedDescription.debugDescription)
+//        }
+//        do {
+//            let bibleVerseResponse: BibleVerseModel = try await requestSender.sendRequest(requestMaker: requestMaker)
+//            return bibleVerseResponse
+//        }
+//        catch let error {
+//            throw GenericNetworkError.httpResponseMissing(reason: error.localizedDescription.debugDescription)
+//        }
+//    }
     
     func fetchVerse(for passage: String) async throws -> BibleVerseModel {
         if !isURLValid("\(baseURL)/\(passage)") {
@@ -24,6 +59,7 @@ class BibleNetwork {
         }
         
         guard let url = URL(string: "\(baseURL)/\(passage)") else {
+            print("\(baseURL)/\(passage)")
             throw NetworkError.invalidURL
         }
         
@@ -56,9 +92,18 @@ class BibleNetwork {
             semaphore.wait()
             return isValid
         }
-        
-        return false
+        return true
     }
 }
 
 
+public extension URLComponents {
+    init(scheme: String, hostResource: String, path: String, queryItems: [URLQueryItem]? = nil) {
+        var components: URLComponents = .init()
+        components.scheme = scheme
+        components.host = hostResource
+        components.path = path
+        components.queryItems = queryItems
+        self = components
+    }
+}

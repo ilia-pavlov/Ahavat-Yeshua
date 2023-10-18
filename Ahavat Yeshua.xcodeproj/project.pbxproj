@@ -35,6 +35,11 @@
 		08AB17822ABD357800813AA4 /* BibleNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17812ABD357800813AA4 /* BibleNetwork.swift */; };
 		08AB17842ABD360900813AA4 /* BibleVerseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17832ABD360900813AA4 /* BibleVerseView.swift */; };
 		08AB17862ABD397800813AA4 /* BibleVerseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17852ABD397800813AA4 /* BibleVerseViewModel.swift */; };
+		08E6291E2ADF646000891626 /* RequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6291D2ADF646000891626 /* RequestMaker.swift */; };
+		08E629202ADF649100891626 /* RequestMaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6291F2ADF649100891626 /* RequestMaking.swift */; };
+		08E629222ADF64C100891626 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E629212ADF64C100891626 /* NetworkError.swift */; };
+		08E629242ADF687F00891626 /* RequestSending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E629232ADF687F00891626 /* RequestSending.swift */; };
+		08E629262ADF6B8C00891626 /* Fetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E629252ADF6B8C00891626 /* Fetching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +72,11 @@
 		08AB17812ABD357800813AA4 /* BibleNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleNetwork.swift; sourceTree = "<group>"; };
 		08AB17832ABD360900813AA4 /* BibleVerseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleVerseView.swift; sourceTree = "<group>"; };
 		08AB17852ABD397800813AA4 /* BibleVerseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleVerseViewModel.swift; sourceTree = "<group>"; };
+		08E6291D2ADF646000891626 /* RequestMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMaker.swift; sourceTree = "<group>"; };
+		08E6291F2ADF649100891626 /* RequestMaking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMaking.swift; sourceTree = "<group>"; };
+		08E629212ADF64C100891626 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		08E629232ADF687F00891626 /* RequestSending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSending.swift; sourceTree = "<group>"; };
+		08E629252ADF6B8C00891626 /* Fetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetching.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +139,7 @@
 		08AB174A2ABBD04100813AA4 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				08E6291C2ADF644B00891626 /* Network */,
 				08AB17892ABD56EC00813AA4 /* Purchase */,
 				08AB177B2ABD2E6600813AA4 /* Security */,
 				08AB174B2ABBD04F00813AA4 /* UserInterface */,
@@ -219,6 +230,18 @@
 			path = Purchase;
 			sourceTree = "<group>";
 		};
+		08E6291C2ADF644B00891626 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				08E6291D2ADF646000891626 /* RequestMaker.swift */,
+				08E6291F2ADF649100891626 /* RequestMaking.swift */,
+				08E629212ADF64C100891626 /* NetworkError.swift */,
+				08E629232ADF687F00891626 /* RequestSending.swift */,
+				08E629252ADF6B8C00891626 /* Fetching.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AB17622ABBF03F00813AA4 /* DonationView.swift in Sources */,
+				08E629222ADF64C100891626 /* NetworkError.swift in Sources */,
 				08AB175A2ABBE37300813AA4 /* WebViewRepresentable.swift in Sources */,
 				08AB174D2ABBD18F00813AA4 /* TabBarItem.swift in Sources */,
 				08AB17542ABBD96700813AA4 /* WebView.swift in Sources */,
@@ -299,6 +323,7 @@
 				08AB174F2ABBD1EC00813AA4 /* SFSymbols.swift in Sources */,
 				08AB17382ABBCCE300813AA4 /* ContentView.swift in Sources */,
 				08AB175E2ABBEFF700813AA4 /* BibleReadingView.swift in Sources */,
+				08E629202ADF649100891626 /* RequestMaking.swift in Sources */,
 				08AB17782ABD294100813AA4 /* EmailInputView.swift in Sources */,
 				08AB17712ABD1B2200813AA4 /* ChurchInfoContext.swift in Sources */,
 				08AB17642ABBF04E00813AA4 /* LiveStreamView.swift in Sources */,
@@ -308,12 +333,15 @@
 				08AB176C2ABD173800813AA4 /* SingleRowLink.swift in Sources */,
 				08AB177A2ABD2A9300813AA4 /* DOBView.swift in Sources */,
 				08AB17362ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift in Sources */,
+				08E6291E2ADF646000891626 /* RequestMaker.swift in Sources */,
+				08E629262ADF6B8C00891626 /* Fetching.swift in Sources */,
 				08AB176E2ABD1A1A00813AA4 /* SquareView.swift in Sources */,
 				08AB17802ABD351600813AA4 /* BibleVerseModel.swift in Sources */,
 				08AB17602ABBF02D00813AA4 /* ProfileView.swift in Sources */,
 				08AB17842ABD360900813AA4 /* BibleVerseView.swift in Sources */,
 				08AB17862ABD397800813AA4 /* BibleVerseViewModel.swift in Sources */,
 				08AB17492ABBD00900813AA4 /* ExploreView.swift in Sources */,
+				08E629242ADF687F00891626 /* RequestSending.swift in Sources */,
 				08AB177D2ABD2E7800813AA4 /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

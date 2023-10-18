@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct BibleVerseModel: Codable, Identifiable {
-    var id: String { reference }
+public struct BibleVerseModel: Codable, Identifiable {
+    public var id: String { reference }
     let reference: String
     let text: String
     

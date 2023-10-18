@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct WebView: View {
     let url: String
 
