@@ -9,12 +9,14 @@ import SwiftUI
 
 
 struct WebView: View {
-    let url: URL
+    let url: String
 
     var body: some View {
         NavigationView {
-            WebViewRepresentable(urlString: url.absoluteString)
+            let urlFormat: URL = URL(string: url)!
+            WebViewRepresentable(urlString: urlFormat.absoluteString)
                 .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
+

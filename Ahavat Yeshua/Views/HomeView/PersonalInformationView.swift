@@ -8,45 +8,73 @@
 import SwiftUI
 
 struct PersonalInformationView: View {
+    @State private var isEditing = false
+    @State private var name = ""
+    @State private var email = ""
+    @State private var birthDate = Date()
+    @State private var address = ""
+    @State private var phone = ""
+    @State private var isPickerPresented = false
+    @ObservedObject private var userSettings = UserSettings.shared
+
     var body: some View {
         List {
             Section(header: Text("Personal Information")) {
-                Text("Name: John Doe")
-                Text("Email: john.doe@example.com")
-                Text("Date of Birth: January 1, 1980")
+                if isEditing {
+                    TextField("Full Name", text: $userSettings.name)
+                    EmailInputView(email: $userSettings.email)
+                    Button(action: {
+                        isPickerPresented = true
+                    }) {
+                        Text("Date of Birth: \(formattedBirthDate)")
+                    }
+                } else {
+                    Text("Full Name: \(userSettings.name)")
+                    Text("Email: \(userSettings.email)")
+                    Text("Date of Birth: \(formattedBirthDate)")
+                }
             }
-            
+
             Section(header: Text("Contact Information")) {
-                Text("Address: 123 Main St, City")
-                Text("Phone: (123) 456-7890")
+                if isEditing {
+                    TextField("Address", text: $userSettings.address)
+                    TextField("Phone", text: $userSettings.phone)
+                } else {
+                    Text("Address: \(userSettings.address)")
+                    Text("Phone: \(userSettings.phone)")
+                }
+            }
+
+            Section(header: Text("Actions")) {
+                Button(action: toggleEdit) {
+                    Text(isEditing ? "Save" : "Edit")
+                }
             }
             
-            Section(header: Text("Request pray support")) {
-                Button(action: shareProfile) {
-                    Text("Request pray support")
-                }
+            Button(action: userSettings.cleanAll) {
+                Text("Clear All")
+                    .foregroundColor(.red)
             }
-                
-                Section(header: Text("Notes")) {
-                    Text("You haven't added any notes yet.")
-                }
-                
-                Section(header: Text("Goals")) {
-                    Text("You haven't set any goals yet.")
-                }
-                
-                Section(header: Text("Prayer List")) {
-                    Text("You haven't added any prayer requests yet.")
-                }
-            .listStyle(GroupedListStyle())
-            .navigationBarTitle("My Profile")
         }
+        .listStyle(GroupedListStyle())
+        .navigationBarTitle("My Profile")
+        .sheet(isPresented: $isPickerPresented) {
+                        DOBView(birthDate: $birthDate,
+                                isPickerPresented: $isPickerPresented)
+            }
+    }
+
+    func toggleEdit() {
+        isEditing.toggle()
     }
     
-    func shareProfile() {
-        // Implement sharing logic here
+    var formattedBirthDate: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        return dateFormatter.string(from: birthDate)
     }
 }
+
 
 #Preview {
     PersonalInformationView()

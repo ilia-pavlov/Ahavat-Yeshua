@@ -42,29 +42,6 @@ struct HomeView: View {
     }
 }
 
-struct SquareView: View {
-    var iconName: String
-    var label: String
-    
-    var body: some View {
-        VStack {
-            Image(systemName: iconName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80)
-                .foregroundColor(.blue)
-            
-            Text(label)
-                .font(.headline)
-                .multilineTextAlignment(.center)
-        }
-        .frame(width: 160, height: 160)
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 5)
-    }
-}
-
 #Preview {
     HomeView()
 }

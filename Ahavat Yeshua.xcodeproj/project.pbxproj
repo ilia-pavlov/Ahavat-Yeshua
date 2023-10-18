@@ -24,6 +24,17 @@
 		08AB17642ABBF04E00813AA4 /* LiveStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17632ABBF04E00813AA4 /* LiveStreamView.swift */; };
 		08AB17662ABBF95A00813AA4 /* ChurchInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17652ABBF95A00813AA4 /* ChurchInformationView.swift */; };
 		08AB17682ABBF99C00813AA4 /* PersonalInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17672ABBF99C00813AA4 /* PersonalInformationView.swift */; };
+		08AB176A2ABD167500813AA4 /* SingleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17692ABD167500813AA4 /* SingleRow.swift */; };
+		08AB176C2ABD173800813AA4 /* SingleRowLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB176B2ABD173800813AA4 /* SingleRowLink.swift */; };
+		08AB176E2ABD1A1A00813AA4 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB176D2ABD1A1A00813AA4 /* SquareView.swift */; };
+		08AB17712ABD1B2200813AA4 /* ChurchInfoContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17702ABD1B2200813AA4 /* ChurchInfoContext.swift */; };
+		08AB17782ABD294100813AA4 /* EmailInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17772ABD294100813AA4 /* EmailInputView.swift */; };
+		08AB177A2ABD2A9300813AA4 /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17792ABD2A9300813AA4 /* DOBView.swift */; };
+		08AB177D2ABD2E7800813AA4 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB177C2ABD2E7800813AA4 /* UserSettings.swift */; };
+		08AB17802ABD351600813AA4 /* BibleVerseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB177F2ABD351600813AA4 /* BibleVerseModel.swift */; };
+		08AB17822ABD357800813AA4 /* BibleNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17812ABD357800813AA4 /* BibleNetwork.swift */; };
+		08AB17842ABD360900813AA4 /* BibleVerseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17832ABD360900813AA4 /* BibleVerseView.swift */; };
+		08AB17862ABD397800813AA4 /* BibleVerseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17852ABD397800813AA4 /* BibleVerseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +56,17 @@
 		08AB17632ABBF04E00813AA4 /* LiveStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamView.swift; sourceTree = "<group>"; };
 		08AB17652ABBF95A00813AA4 /* ChurchInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchInformationView.swift; sourceTree = "<group>"; };
 		08AB17672ABBF99C00813AA4 /* PersonalInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformationView.swift; sourceTree = "<group>"; };
+		08AB17692ABD167500813AA4 /* SingleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRow.swift; sourceTree = "<group>"; };
+		08AB176B2ABD173800813AA4 /* SingleRowLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRowLink.swift; sourceTree = "<group>"; };
+		08AB176D2ABD1A1A00813AA4 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		08AB17702ABD1B2200813AA4 /* ChurchInfoContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchInfoContext.swift; sourceTree = "<group>"; };
+		08AB17772ABD294100813AA4 /* EmailInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailInputView.swift; sourceTree = "<group>"; };
+		08AB17792ABD2A9300813AA4 /* DOBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBView.swift; sourceTree = "<group>"; };
+		08AB177C2ABD2E7800813AA4 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		08AB177F2ABD351600813AA4 /* BibleVerseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleVerseModel.swift; sourceTree = "<group>"; };
+		08AB17812ABD357800813AA4 /* BibleNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleNetwork.swift; sourceTree = "<group>"; };
+		08AB17832ABD360900813AA4 /* BibleVerseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleVerseView.swift; sourceTree = "<group>"; };
+		08AB17852ABD397800813AA4 /* BibleVerseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleVerseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +129,8 @@
 		08AB174A2ABBD04100813AA4 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				08AB17892ABD56EC00813AA4 /* Purchase */,
+				08AB177B2ABD2E6600813AA4 /* Security */,
 				08AB174B2ABBD04F00813AA4 /* UserInterface */,
 			);
 			path = Foundation;
@@ -115,9 +139,15 @@
 		08AB174B2ABBD04F00813AA4 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				08AB177E2ABD34FA00813AA4 /* BibleFeature */,
 				08AB17522ABBD95100813AA4 /* WebView */,
 				08AB174C2ABBD18F00813AA4 /* TabBarItem.swift */,
 				08AB174E2ABBD1EC00813AA4 /* SFSymbols.swift */,
+				08AB17692ABD167500813AA4 /* SingleRow.swift */,
+				08AB176B2ABD173800813AA4 /* SingleRowLink.swift */,
+				08AB176D2ABD1A1A00813AA4 /* SquareView.swift */,
+				08AB17772ABD294100813AA4 /* EmailInputView.swift */,
+				08AB17792ABD2A9300813AA4 /* DOBView.swift */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -144,14 +174,49 @@
 		08AB175C2ABBEFE400813AA4 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				08AB176F2ABD1AFA00813AA4 /* ChurchInfo */,
 				08AB175D2ABBEFF700813AA4 /* BibleReadingView.swift */,
 				08AB175F2ABBF02D00813AA4 /* ProfileView.swift */,
 				08AB17612ABBF03F00813AA4 /* DonationView.swift */,
 				08AB17632ABBF04E00813AA4 /* LiveStreamView.swift */,
-				08AB17652ABBF95A00813AA4 /* ChurchInformationView.swift */,
 				08AB17672ABBF99C00813AA4 /* PersonalInformationView.swift */,
 			);
 			path = HomeView;
+			sourceTree = "<group>";
+		};
+		08AB176F2ABD1AFA00813AA4 /* ChurchInfo */ = {
+			isa = PBXGroup;
+			children = (
+				08AB17652ABBF95A00813AA4 /* ChurchInformationView.swift */,
+				08AB17702ABD1B2200813AA4 /* ChurchInfoContext.swift */,
+			);
+			path = ChurchInfo;
+			sourceTree = "<group>";
+		};
+		08AB177B2ABD2E6600813AA4 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				08AB177C2ABD2E7800813AA4 /* UserSettings.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		08AB177E2ABD34FA00813AA4 /* BibleFeature */ = {
+			isa = PBXGroup;
+			children = (
+				08AB177F2ABD351600813AA4 /* BibleVerseModel.swift */,
+				08AB17812ABD357800813AA4 /* BibleNetwork.swift */,
+				08AB17832ABD360900813AA4 /* BibleVerseView.swift */,
+				08AB17852ABD397800813AA4 /* BibleVerseViewModel.swift */,
+			);
+			path = BibleFeature;
+			sourceTree = "<group>";
+		};
+		08AB17892ABD56EC00813AA4 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Purchase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,17 +293,28 @@
 				08AB175A2ABBE37300813AA4 /* WebViewRepresentable.swift in Sources */,
 				08AB174D2ABBD18F00813AA4 /* TabBarItem.swift in Sources */,
 				08AB17542ABBD96700813AA4 /* WebView.swift in Sources */,
+				08AB176A2ABD167500813AA4 /* SingleRow.swift in Sources */,
 				08AB17452ABBCF2E00813AA4 /* HomeView.swift in Sources */,
 				08AB17472ABBCFBA00813AA4 /* BibleStudyView.swift in Sources */,
 				08AB174F2ABBD1EC00813AA4 /* SFSymbols.swift in Sources */,
 				08AB17382ABBCCE300813AA4 /* ContentView.swift in Sources */,
 				08AB175E2ABBEFF700813AA4 /* BibleReadingView.swift in Sources */,
+				08AB17782ABD294100813AA4 /* EmailInputView.swift in Sources */,
+				08AB17712ABD1B2200813AA4 /* ChurchInfoContext.swift in Sources */,
 				08AB17642ABBF04E00813AA4 /* LiveStreamView.swift in Sources */,
+				08AB17822ABD357800813AA4 /* BibleNetwork.swift in Sources */,
 				08AB17662ABBF95A00813AA4 /* ChurchInformationView.swift in Sources */,
 				08AB17682ABBF99C00813AA4 /* PersonalInformationView.swift in Sources */,
+				08AB176C2ABD173800813AA4 /* SingleRowLink.swift in Sources */,
+				08AB177A2ABD2A9300813AA4 /* DOBView.swift in Sources */,
 				08AB17362ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift in Sources */,
+				08AB176E2ABD1A1A00813AA4 /* SquareView.swift in Sources */,
+				08AB17802ABD351600813AA4 /* BibleVerseModel.swift in Sources */,
 				08AB17602ABBF02D00813AA4 /* ProfileView.swift in Sources */,
+				08AB17842ABD360900813AA4 /* BibleVerseView.swift in Sources */,
+				08AB17862ABD397800813AA4 /* BibleVerseViewModel.swift in Sources */,
 				08AB17492ABBD00900813AA4 /* ExploreView.swift in Sources */,
+				08AB177D2ABD2E7800813AA4 /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
