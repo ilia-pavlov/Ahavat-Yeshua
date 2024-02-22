@@ -14,6 +14,7 @@ struct HomeView: View {
                 Spacer()
                 Text("Welcome to Our Church")
                     .font(.title)
+                    .accessibilityIdentifier("homeView_title")
                                 
                 HStack(spacing: 20) {
                     NavigationLink(destination: BibleReadingView()) {
