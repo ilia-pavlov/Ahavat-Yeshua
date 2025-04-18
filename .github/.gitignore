@@ -1,0 +1,58 @@
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+DerivedData/
+*.hmap
+*.ipa
+*.app.dSYM.zip
+*.app.dSYM
+
+# SwiftPM
+.build/
+.swiftpm/
+Package.pins
+# ✅ We DO want to track this one:
+# !Package.resolved
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Archives
+*.xcarchive
+
+# Logs
+*.log
+
+# DS_Store
+.DS_Store
+
+# Simulator logs
+coredata.sql
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# SwiftLint cache
+.swiftlint.yml
+.swiftlint.yml.tmp
+
+# Firebase
+GoogleService-Info.plist
+
+# Keychain/Secrets (example, customize for your app)
+Secrets.plist
