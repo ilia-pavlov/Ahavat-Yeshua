@@ -52,11 +52,10 @@ struct HomeView: View {
                                        foregroundColor: .black)
                         }
 
-                        NavigationLink(destination: TodoView()) {
-                            SquareView(iconName: "gearshape",
-                                       label: "Settings",
-                                       foregroundColor: .black,
-                                       overlayText: "Coming Soon")
+                        NavigationLink(destination: HolyPlacesMapView()) {
+                            SquareView(iconName: "map",
+                                       label: "Holy Places Map",
+                                       foregroundColor: .black)
                         }
                     }
 

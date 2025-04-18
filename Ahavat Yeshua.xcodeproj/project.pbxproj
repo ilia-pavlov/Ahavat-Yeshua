@@ -24,6 +24,10 @@
 		086EE0972DB29561007515C6 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0962DB29561007515C6 /* ProfileMainView.swift */; };
 		086EE0992DB2ACD6007515C6 /* FeedMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0982DB2ACD6007515C6 /* FeedMock.swift */; };
 		086EE09B2DB2BC82007515C6 /* DevMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE09A2DB2BC82007515C6 /* DevMenuView.swift */; };
+		086EE09F2DB2C08C007515C6 /* FaithQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE09E2DB2C08C007515C6 /* FaithQuizView.swift */; };
+		086EE0A12DB2C0A6007515C6 /* HolyPlacesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0A02DB2C0A6007515C6 /* HolyPlacesMapView.swift */; };
+		086EE0A32DB2C0B2007515C6 /* MiniChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0A22DB2C0B2007515C6 /* MiniChallengesView.swift */; };
+		086EE0A52DB2C64F007515C6 /* HolyLandData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0A42DB2C64F007515C6 /* HolyLandData.swift */; };
 		08AB17362ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17352ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift */; };
 		08AB17382ABBCCE300813AA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17372ABBCCE300813AA4 /* ContentView.swift */; };
 		08AB173A2ABBCCE400813AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AB17392ABBCCE400813AA4 /* Assets.xcassets */; };
@@ -110,6 +114,10 @@
 		086EE0962DB29561007515C6 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
 		086EE0982DB2ACD6007515C6 /* FeedMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMock.swift; sourceTree = "<group>"; };
 		086EE09A2DB2BC82007515C6 /* DevMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevMenuView.swift; sourceTree = "<group>"; };
+		086EE09E2DB2C08C007515C6 /* FaithQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithQuizView.swift; sourceTree = "<group>"; };
+		086EE0A02DB2C0A6007515C6 /* HolyPlacesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyPlacesMapView.swift; sourceTree = "<group>"; };
+		086EE0A22DB2C0B2007515C6 /* MiniChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengesView.swift; sourceTree = "<group>"; };
+		086EE0A42DB2C64F007515C6 /* HolyLandData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyLandData.swift; sourceTree = "<group>"; };
 		08AB17322ABBCCE300813AA4 /* Ahavat Yeshua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ahavat Yeshua.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AB17352ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ahavat_YeshuaApp.swift; sourceTree = "<group>"; };
 		08AB17372ABBCCE300813AA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -223,6 +231,9 @@
 		086EE0922DB29429007515C6 /* ExploreView */ = {
 			isa = PBXGroup;
 			children = (
+				08AB17482ABBD00900813AA4 /* ExploreView.swift */,
+				086EE09E2DB2C08C007515C6 /* FaithQuizView.swift */,
+				086EE0A22DB2C0B2007515C6 /* MiniChallengesView.swift */,
 			);
 			path = ExploreView;
 			sourceTree = "<group>";
@@ -283,9 +294,6 @@
 			isa = PBXGroup;
 			children = (
 				086EE0642DB1C876007515C6 /* TodoView.swift */,
-				086EE0922DB29429007515C6 /* ExploreView */,
-				086EE0912DB29422007515C6 /* FeedView */,
-				08AB175C2ABBEFE400813AA4 /* HomeView */,
 				08AB175B2ABBEFC900813AA4 /* TabBarView */,
 			);
 			path = Views;
@@ -330,9 +338,10 @@
 		08AB175B2ABBEFC900813AA4 /* TabBarView */ = {
 			isa = PBXGroup;
 			children = (
+				08AB175C2ABBEFE400813AA4 /* HomeView */,
+				086EE0912DB29422007515C6 /* FeedView */,
+				086EE0922DB29429007515C6 /* ExploreView */,
 				08AB17462ABBCFBA00813AA4 /* BibleStudyView.swift */,
-				08AB17482ABBD00900813AA4 /* ExploreView.swift */,
-				08AB17442ABBCF2E00813AA4 /* HomeView.swift */,
 			);
 			path = TabBarView;
 			sourceTree = "<group>";
@@ -340,6 +349,9 @@
 		08AB175C2ABBEFE400813AA4 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				08AB17442ABBCF2E00813AA4 /* HomeView.swift */,
+				086EE0A02DB2C0A6007515C6 /* HolyPlacesMapView.swift */,
+				086EE0A42DB2C64F007515C6 /* HolyLandData.swift */,
 				086EE0682DB1CB68007515C6 /* Multi-selection */,
 				08AB176F2ABD1AFA00813AA4 /* ChurchInfo */,
 				08AB175D2ABBEFF700813AA4 /* BibleReadingView.swift */,
@@ -553,6 +565,7 @@
 				08AB17452ABBCF2E00813AA4 /* HomeView.swift in Sources */,
 				08AB17472ABBCFBA00813AA4 /* BibleStudyView.swift in Sources */,
 				08AB174F2ABBD1EC00813AA4 /* SFSymbols.swift in Sources */,
+				086EE0A52DB2C64F007515C6 /* HolyLandData.swift in Sources */,
 				08AB17382ABBCCE300813AA4 /* ContentView.swift in Sources */,
 				08AB175E2ABBEFF700813AA4 /* BibleReadingView.swift in Sources */,
 				086EE0902DB29262007515C6 /* BibleLabel.swift in Sources */,
@@ -571,11 +584,14 @@
 				08E629262ADF6B8C00891626 /* Fetching.swift in Sources */,
 				08AB176E2ABD1A1A00813AA4 /* SquareView.swift in Sources */,
 				08AB17802ABD351600813AA4 /* BibleVerseModel.swift in Sources */,
+				086EE0A32DB2C0B2007515C6 /* MiniChallengesView.swift in Sources */,
 				086EE06A2DB1CB90007515C6 /* SelectionSummaryView.swift in Sources */,
 				086EE0942DB2943B007515C6 /* FeedView.swift in Sources */,
+				086EE09F2DB2C08C007515C6 /* FaithQuizView.swift in Sources */,
 				086EE0652DB1C876007515C6 /* TodoView.swift in Sources */,
 				08AB17842ABD360900813AA4 /* BibleVerseView.swift in Sources */,
 				08AB17862ABD397800813AA4 /* BibleVerseViewModel.swift in Sources */,
+				086EE0A12DB2C0A6007515C6 /* HolyPlacesMapView.swift in Sources */,
 				08AB17492ABBD00900813AA4 /* ExploreView.swift in Sources */,
 				08E629242ADF687F00891626 /* RequestSending.swift in Sources */,
 				08AB177D2ABD2E7800813AA4 /* UserSettings.swift in Sources */,
