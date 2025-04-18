@@ -24,10 +24,6 @@ final class UITests: XCTestCase {
         app.launch()
     }
 
-//    override func tearDownWithError() throws {
-//        
-//    }
-
     func testHomeTabElementsExistence() {
         bibleReadingCard.assertExistence(isElementStatic: true)
         profileCard.assertExistence(isElementStatic: true)

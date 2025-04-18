@@ -94,6 +94,36 @@
                   endingLineNumber = "86"
                   offsetFromSymbolStart = "420">
                </Location>
+               <Location
+                  uuid = "E7C0C83F-02C9-4842-A36F-D8A5ABF348BC - 3cc2b0c95a35a164"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Ahavat_Yeshua.BibleNetwork.isURLValid(Swift.String) -&gt; Swift.Bool"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/Ahavat-Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "E7C0C83F-02C9-4842-A36F-D8A5ABF348BC - 3cc2b0c95a35a164"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Ahavat_Yeshua.BibleNetwork.isURLValid(Swift.String) -&gt; Swift.Bool"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/Ahavat-Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "420">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -181,6 +211,21 @@
                   moduleName = "Ahavat Yeshua"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/iliapavlov/Documents/apps/Ahavat%20Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "747746CF-A7E1-4CE9-9049-BD0032651BBB - 3cc2b0c95a35a183"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Ahavat_Yeshua.BibleNetwork.isURLValid(Swift.String) -&gt; Swift.Bool"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/Ahavat-Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "87"
@@ -280,6 +325,21 @@
                   endingLineNumber = "93"
                   offsetFromSymbolStart = "1276">
                </Location>
+               <Location
+                  uuid = "AA15B645-E393-4740-ABCE-C2EF25A4F6AE - bc0ae522e9dd619f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ahavat_Yeshua.BibleNetwork.isURLValid(Swift.String) -&gt; Swift.Bool"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/Ahavat-Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1276">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -373,6 +433,21 @@
                   endingLineNumber = "57"
                   offsetFromSymbolStart = "732">
                </Location>
+               <Location
+                  uuid = "A007F8D1-83DD-4056-AE0A-281E1C18776B - cf4395f6fee8bc42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Ahavat_Yeshua.BibleNetwork.fetchVerse(for: Swift.String) async throws -&gt; Ahavat_Yeshua.BibleVerseModel"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/Ahavat-Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "732">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -460,6 +535,21 @@
                   moduleName = "Ahavat Yeshua"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/iliapavlov/Documents/apps/Ahavat%20Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1952">
+               </Location>
+               <Location
+                  uuid = "802E3C78-DC41-46AB-B1F7-2B0E2BB44781 - cf4395f6fee8bdaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Ahavat_Yeshua.BibleNetwork.fetchVerse(for: Swift.String) async throws -&gt; Ahavat_Yeshua.BibleVerseModel"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/Ahavat-Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "62"
@@ -588,6 +678,66 @@
                   startingLineNumber = "66"
                   endingLineNumber = "66"
                   offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "F5284AFC-1156-4044-9E30-48C885B241F3 - cf4395f6fee8bd2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Ahavat_Yeshua.BibleNetwork.fetchVerse(for: Swift.String) async throws -&gt; Ahavat_Yeshua.BibleVerseModel"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/Ahavat-Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "1716">
+               </Location>
+               <Location
+                  uuid = "F5284AFC-1156-4044-9E30-48C885B241F3 - 93896350b30f11d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Ahavat_Yeshua.BibleNetwork.fetchVerse(for: Swift.String) async throws -&gt; Ahavat_Yeshua.BibleVerseModel"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/Ahavat-Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "F5284AFC-1156-4044-9E30-48C885B241F3 - 67f1cb43f581c129"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Ahavat_Yeshua.BibleNetwork.fetchVerse(for: Swift.String) async throws -&gt; Ahavat_Yeshua.BibleVerseModel"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/Ahavat-Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "F5284AFC-1156-4044-9E30-48C885B241F3 - 5458d1fa70126726"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Ahavat_Yeshua.BibleNetwork.fetchVerse(for: Swift.String) async throws -&gt; Ahavat_Yeshua.BibleVerseModel"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/Ahavat-Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>

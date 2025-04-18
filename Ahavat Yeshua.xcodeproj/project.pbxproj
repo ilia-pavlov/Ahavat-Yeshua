@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		081715AF2B87DEAA00CBC667 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081715AE2B87DEAA00CBC667 /* UITests.swift */; };
-		086B73772D6B7DEE0091A863 /* UITestsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086B73762D6B7DEE0091A863 /* UITestsScreen.swift */; };
 		086EE0652DB1C876007515C6 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0642DB1C876007515C6 /* TodoView.swift */; };
 		086EE0672DB1CA17007515C6 /* MultiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0662DB1CA17007515C6 /* MultiSelectionView.swift */; };
 		086EE06A2DB1CB90007515C6 /* SelectionSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0692DB1CB90007515C6 /* SelectionSummaryView.swift */; };
@@ -89,7 +88,6 @@
 /* Begin PBXFileReference section */
 		081715AC2B87DEAA00CBC667 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		081715AE2B87DEAA00CBC667 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
-		086B73762D6B7DEE0091A863 /* UITestsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsScreen.swift; sourceTree = "<group>"; };
 		086EE0642DB1C876007515C6 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		086EE0662DB1CA17007515C6 /* MultiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionView.swift; sourceTree = "<group>"; };
 		086EE0692DB1CB90007515C6 /* SelectionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSummaryView.swift; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				081715AE2B87DEAA00CBC667 /* UITests.swift */,
-				086B73762D6B7DEE0091A863 /* UITestsScreen.swift */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
@@ -498,7 +495,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				081715AF2B87DEAA00CBC667 /* UITests.swift in Sources */,
-				086B73772D6B7DEE0091A863 /* UITestsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
