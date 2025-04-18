@@ -10,6 +10,7 @@ import SwiftUI
 struct LiveStreamView: View {
     var body: some View {
         WebView(url: "https://www.youtube.com/@AhavatYeshua/streams")
+        
     }
 }
 

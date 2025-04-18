@@ -9,33 +9,63 @@ import SwiftUI
 
 struct BibleStudyView: View {
     var body: some View {
-        VStack {
-            Text("Faith and Knowledge")
-                .font(.largeTitle)
-            List {
-                Section(header: Text("Old Testament")) {
-                    HStack {
-                        Image(systemName: "video.fill")
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        Link("Book of Malachi", destination: URL(string: "https://www.youtube.com/watch?v=zVLKnHs5nFY&list=PLqF5Pt_yMO7lcUN6hHO1udbYfAXaeDdJc")!)
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: [.blue, .purple]),
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                Text("Faith and Knowledge")
+                    .font(.largeTitle)
+                List {
+                    Section {
+                        Link(destination: URL(string: "https://www.youtube.com/watch?v=zVLKnHs5nFY&list=PLqF5Pt_yMO7lcUN6hHO1udbYfAXaeDdJc")!) {
+                            Label("Book of Malachi", systemImage: "video.fill")
+                                .foregroundColor(.blue)
+                                .padding(.vertical, 6)
+                        }
+
+                        Link(destination: URL(string: "https://www.youtube.com/watch?v=7gM0bgin0O0&list=PLqF5Pt_yMO7lYb0Sym42iT42cdevaFwFx")!) {
+                            Label("Book of Daniel", systemImage: "video.fill")
+                                .foregroundColor(.blue)
+                                .padding(.vertical, 6)
+                        }
+
+                        Link(destination: URL(string: "https://www.youtube.com/watch?v=6_2IqOlbfhU&list=PLqF5Pt_yMO7mdHHR3PWx7EN60Or7MNYPi")!) {
+                            Label("Book of Isaiah", systemImage: "video.fill")
+                                .foregroundColor(.blue)
+                                .padding(.vertical, 6)
+                        }
+                    } header: {
+                        Text("📜 Old Testament")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding(.top)
                     }
-                    HStack {
-                        Image(systemName: "video.fill")
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        Link("Book of Daniel", destination: URL(string: "https://www.youtube.com/watch?v=7gM0bgin0O0&list=PLqF5Pt_yMO7lYb0Sym42iT42cdevaFwFx")!)
+                    Section {
+                        Label("1 Peter", systemImage: "book.fill")
+                            .foregroundColor(.purple)
+                            .padding(.vertical, 6)
+
+                        Label("Acts", systemImage: "book.fill")
+                            .foregroundColor(.purple)
+                            .padding(.vertical, 6)
+
+                        Label("Galatians", systemImage: "book.fill")
+                            .foregroundColor(.purple)
+                            .padding(.vertical, 6)
+                    } header: {
+                        Text("📖 New Testament")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding(.top)
                     }
-                    HStack {
-                        Image(systemName: "video.fill")
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        Link("Book of Isaiah", destination: URL(string: "https://www.youtube.com/watch?v=6_2IqOlbfhU&list=PLqF5Pt_yMO7mdHHR3PWx7EN60Or7MNYPi")!)
-                    }
-                }
-                Section(header: Text("New Testament")) {
-                    Text("1 Peter")
-                    Text("Acts")
-                    Text("Galatians")
                 }
             }
+            .scrollContentBackground(.hidden) // Remove default list background
         }
     }
 }

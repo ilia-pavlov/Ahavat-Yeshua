@@ -63,8 +63,8 @@ struct DonationView: View {
         .sheet(isPresented: $showCongratulations, content: {
             CongratulationsView(isPresented: $showCongratulations)
         })
+        
     }
-
 }
 
 struct CongratulationsView: View {
