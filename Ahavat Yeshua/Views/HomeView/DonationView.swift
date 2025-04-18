@@ -110,27 +110,71 @@ struct CongratulationsView: View {
 }
 
 
+import SwiftUI
+
 struct FireworksView: View {
-    @State private var rotate = false
-    @State private var scale = false
-    
+    @State private var particles: [Particle] = []
+
     var body: some View {
-        Image(systemName: "sparkles")
-            .font(.largeTitle)
-            .foregroundColor(.yellow)
-            .rotationEffect(.degrees(rotate ? 15 : -15)) // Rotate back and forth
-            .scaleEffect(scale ? 1.5 : 1) // Scale up and down
-            .onAppear {
-                withAnimation(
-                    Animation.easeInOut(duration: 1)
-                        .repeatForever(autoreverses: true)
-                ) {
-                    rotate.toggle()
-                    scale.toggle()
+        ZStack {
+            ForEach(particles) { particle in
+                Circle()
+                    .fill(particle.color)
+                    .frame(width: 8, height: 8)
+                    .position(particle.position)
+                    .opacity(particle.opacity)
+                    .scaleEffect(particle.scale)
+                    .animation(.easeOut(duration: 5), value: particle)
+            }
+        }
+        .onAppear {
+            launchConfetti()
+        }
+    }
+
+    func launchConfetti() {
+        particles = (0..<40).map { _ in
+            Particle(
+                id: UUID(),
+                position: CGPoint(
+                    x: UIScreen.main.bounds.width / 2,
+                    y: UIScreen.main.bounds.height / 2
+                ),
+                color: Color.random(),
+                opacity: Double.random(in: 0.7...1),
+                scale: CGFloat.random(in: 0.5...1.2)
+            )
+        }
+
+        // Simulate motion
+        for i in particles.indices {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+                withAnimation {
+                    particles[i].position.x += CGFloat.random(in: -150...150)
+                    particles[i].position.y += CGFloat.random(in: -300...0)
+                    particles[i].opacity = 0
                 }
             }
+        }
     }
 }
+
+struct Particle: Identifiable, Equatable {
+    let id: UUID
+    var position: CGPoint
+    let color: Color
+    var opacity: Double
+    let scale: CGFloat
+}
+
+
+extension Color {
+    static func random() -> Color {
+        let colors: [Color] = [.red, .green, .blue, .yellow, .purple, .orange, .pink]
+        return colors.randomElement() ?? .white
+    }
+}
+
 
 #Preview {
     DonationView()

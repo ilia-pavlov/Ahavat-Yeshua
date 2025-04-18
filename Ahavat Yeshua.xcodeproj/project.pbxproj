@@ -22,6 +22,7 @@
 		086EE0902DB29262007515C6 /* BibleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE08F2DB29262007515C6 /* BibleLabel.swift */; };
 		086EE0942DB2943B007515C6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0932DB2943B007515C6 /* FeedView.swift */; };
 		086EE0972DB29561007515C6 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0962DB29561007515C6 /* ProfileMainView.swift */; };
+		086EE0992DB2ACD6007515C6 /* FeedMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0982DB2ACD6007515C6 /* FeedMock.swift */; };
 		08AB17362ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17352ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift */; };
 		08AB17382ABBCCE300813AA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17372ABBCCE300813AA4 /* ContentView.swift */; };
 		08AB173A2ABBCCE400813AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AB17392ABBCCE400813AA4 /* Assets.xcassets */; };
@@ -106,6 +107,7 @@
 		086EE08F2DB29262007515C6 /* BibleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleLabel.swift; sourceTree = "<group>"; };
 		086EE0932DB2943B007515C6 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		086EE0962DB29561007515C6 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
+		086EE0982DB2ACD6007515C6 /* FeedMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMock.swift; sourceTree = "<group>"; };
 		08AB17322ABBCCE300813AA4 /* Ahavat Yeshua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ahavat Yeshua.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AB17352ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ahavat_YeshuaApp.swift; sourceTree = "<group>"; };
 		08AB17372ABBCCE300813AA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				086EE0932DB2943B007515C6 /* FeedView.swift */,
+				086EE0982DB2ACD6007515C6 /* FeedMock.swift */,
 			);
 			path = FeedView;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AB17622ABBF03F00813AA4 /* DonationView.swift in Sources */,
+				086EE0992DB2ACD6007515C6 /* FeedMock.swift in Sources */,
 				086EE0972DB29561007515C6 /* ProfileMainView.swift in Sources */,
 				08E629222ADF64C100891626 /* NetworkError.swift in Sources */,
 				08AB175A2ABBE37300813AA4 /* WebViewRepresentable.swift in Sources */,
