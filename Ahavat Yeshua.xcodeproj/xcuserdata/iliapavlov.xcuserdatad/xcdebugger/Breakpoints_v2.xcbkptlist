@@ -172,6 +172,21 @@
                   endingLineNumber = "87"
                   offsetFromSymbolStart = "440">
                </Location>
+               <Location
+                  uuid = "747746CF-A7E1-4CE9-9049-BD0032651BBB - a9aece0377922554"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Ahavat_Yeshua.BibleNetwork.isURLValid(Swift.String) -&gt; Swift.Bool"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/apps/Ahavat%20Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "448">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -249,6 +264,21 @@
                   startingLineNumber = "93"
                   endingLineNumber = "93"
                   offsetFromSymbolStart = "1108">
+               </Location>
+               <Location
+                  uuid = "AA15B645-E393-4740-ABCE-C2EF25A4F6AE - 29669be8c47ae5cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ahavat_Yeshua.BibleNetwork.isURLValid(Swift.String) -&gt; Swift.Bool"
+                  moduleName = "Ahavat Yeshua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iliapavlov/Documents/apps/Ahavat%20Yeshua/Ahavat%20Yeshua/Foundation/UserInterface/BibleFeature/BibleNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1276">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -12,6 +12,14 @@
 		086EE0652DB1C876007515C6 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0642DB1C876007515C6 /* TodoView.swift */; };
 		086EE0672DB1CA17007515C6 /* MultiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0662DB1CA17007515C6 /* MultiSelectionView.swift */; };
 		086EE06A2DB1CB90007515C6 /* SelectionSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0692DB1CB90007515C6 /* SelectionSummaryView.swift */; };
+		086EE0772DB1E86C007515C6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086EE0762DB1E86C007515C6 /* WidgetKit.framework */; };
+		086EE0792DB1E86C007515C6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086EE0782DB1E86C007515C6 /* SwiftUI.framework */; };
+		086EE07C2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE07B2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetBundle.swift */; };
+		086EE07E2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE07D2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetLiveActivity.swift */; };
+		086EE0802DB1E86C007515C6 /* Ahavat_Yeshua_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE07F2DB1E86C007515C6 /* Ahavat_Yeshua_Widget.swift */; };
+		086EE0822DB1E86C007515C6 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0812DB1E86C007515C6 /* AppIntent.swift */; };
+		086EE0842DB1E86E007515C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086EE0832DB1E86E007515C6 /* Assets.xcassets */; };
+		086EE0882DB1E86E007515C6 /* Ahavat Yeshua WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 086EE0742DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		08AB17362ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17352ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift */; };
 		08AB17382ABBCCE300813AA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17372ABBCCE300813AA4 /* ContentView.swift */; };
 		08AB173A2ABBCCE400813AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AB17392ABBCCE400813AA4 /* Assets.xcassets */; };
@@ -55,7 +63,28 @@
 			remoteGlobalIDString = 08AB17312ABBCCE300813AA4;
 			remoteInfo = "Ahavat Yeshua";
 		};
+		086EE0862DB1E86E007515C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08AB172A2ABBCCE300813AA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 086EE0732DB1E86C007515C6;
+			remoteInfo = "Ahavat Yeshua WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		086EE08C2DB1E86E007515C6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				086EE0882DB1E86E007515C6 /* Ahavat Yeshua WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		081715AC2B87DEAA00CBC667 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +94,15 @@
 		086EE0662DB1CA17007515C6 /* MultiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionView.swift; sourceTree = "<group>"; };
 		086EE0692DB1CB90007515C6 /* SelectionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSummaryView.swift; sourceTree = "<group>"; };
 		086EE06F2DB1E2E9007515C6 /* Ahavat-Yeshua-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ahavat-Yeshua-Info.plist"; sourceTree = SOURCE_ROOT; };
+		086EE0742DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ahavat Yeshua WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		086EE0762DB1E86C007515C6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		086EE0782DB1E86C007515C6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		086EE07B2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ahavat_Yeshua_WidgetBundle.swift; sourceTree = "<group>"; };
+		086EE07D2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ahavat_Yeshua_WidgetLiveActivity.swift; sourceTree = "<group>"; };
+		086EE07F2DB1E86C007515C6 /* Ahavat_Yeshua_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ahavat_Yeshua_Widget.swift; sourceTree = "<group>"; };
+		086EE0812DB1E86C007515C6 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		086EE0832DB1E86E007515C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		086EE0852DB1E86E007515C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08AB17322ABBCCE300813AA4 /* Ahavat Yeshua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ahavat Yeshua.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AB17352ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ahavat_YeshuaApp.swift; sourceTree = "<group>"; };
 		08AB17372ABBCCE300813AA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +147,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		086EE0712DB1E86C007515C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086EE0792DB1E86C007515C6 /* SwiftUI.framework in Frameworks */,
+				086EE0772DB1E86C007515C6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08AB172F2ABBCCE300813AA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,11 +184,35 @@
 			path = "Multi-selection";
 			sourceTree = "<group>";
 		};
+		086EE0752DB1E86C007515C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				086EE0762DB1E86C007515C6 /* WidgetKit.framework */,
+				086EE0782DB1E86C007515C6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		086EE07A2DB1E86C007515C6 /* Ahavat Yeshua Widget */ = {
+			isa = PBXGroup;
+			children = (
+				086EE07B2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetBundle.swift */,
+				086EE07D2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetLiveActivity.swift */,
+				086EE07F2DB1E86C007515C6 /* Ahavat_Yeshua_Widget.swift */,
+				086EE0812DB1E86C007515C6 /* AppIntent.swift */,
+				086EE0832DB1E86E007515C6 /* Assets.xcassets */,
+				086EE0852DB1E86E007515C6 /* Info.plist */,
+			);
+			path = "Ahavat Yeshua Widget";
+			sourceTree = "<group>";
+		};
 		08AB17292ABBCCE300813AA4 = {
 			isa = PBXGroup;
 			children = (
 				08AB17342ABBCCE300813AA4 /* Ahavat Yeshua */,
 				081715AD2B87DEAA00CBC667 /* UITests */,
+				086EE07A2DB1E86C007515C6 /* Ahavat Yeshua Widget */,
+				086EE0752DB1E86C007515C6 /* Frameworks */,
 				08AB17332ABBCCE300813AA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +222,7 @@
 			children = (
 				08AB17322ABBCCE300813AA4 /* Ahavat Yeshua.app */,
 				081715AC2B87DEAA00CBC667 /* UITests.xctest */,
+				086EE0742DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,6 +387,23 @@
 			productReference = 081715AC2B87DEAA00CBC667 /* UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		086EE0732DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 086EE0892DB1E86E007515C6 /* Build configuration list for PBXNativeTarget "Ahavat Yeshua WidgetExtension" */;
+			buildPhases = (
+				086EE0702DB1E86C007515C6 /* Sources */,
+				086EE0712DB1E86C007515C6 /* Frameworks */,
+				086EE0722DB1E86C007515C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ahavat Yeshua WidgetExtension";
+			productName = "Ahavat Yeshua WidgetExtension";
+			productReference = 086EE0742DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		08AB17312ABBCCE300813AA4 /* Ahavat Yeshua */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08AB17402ABBCCE400813AA4 /* Build configuration list for PBXNativeTarget "Ahavat Yeshua" */;
@@ -322,10 +411,12 @@
 				08AB172E2ABBCCE300813AA4 /* Sources */,
 				08AB172F2ABBCCE300813AA4 /* Frameworks */,
 				08AB17302ABBCCE300813AA4 /* Resources */,
+				086EE08C2DB1E86E007515C6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				086EE0872DB1E86E007515C6 /* PBXTargetDependency */,
 			);
 			name = "Ahavat Yeshua";
 			productName = "Ahavat Yeshua";
@@ -345,6 +436,9 @@
 					081715AB2B87DEAA00CBC667 = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 08AB17312ABBCCE300813AA4;
+					};
+					086EE0732DB1E86C007515C6 = {
+						CreatedOnToolsVersion = 15.2;
 					};
 					08AB17312ABBCCE300813AA4 = {
 						CreatedOnToolsVersion = 15.0;
@@ -366,6 +460,7 @@
 			targets = (
 				08AB17312ABBCCE300813AA4 /* Ahavat Yeshua */,
 				081715AB2B87DEAA00CBC667 /* UITests */,
+				086EE0732DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -375,6 +470,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086EE0722DB1E86C007515C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086EE0842DB1E86E007515C6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +499,17 @@
 			files = (
 				081715AF2B87DEAA00CBC667 /* UITests.swift in Sources */,
 				086B73772D6B7DEE0091A863 /* UITestsScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086EE0702DB1E86C007515C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086EE07E2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetLiveActivity.swift in Sources */,
+				086EE0822DB1E86C007515C6 /* AppIntent.swift in Sources */,
+				086EE07C2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetBundle.swift in Sources */,
+				086EE0802DB1E86C007515C6 /* Ahavat_Yeshua_Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +562,11 @@
 			target = 08AB17312ABBCCE300813AA4 /* Ahavat Yeshua */;
 			targetProxy = 081715B22B87DEAA00CBC667 /* PBXContainerItemProxy */;
 		};
+		086EE0872DB1E86E007515C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 086EE0732DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension */;
+			targetProxy = 086EE0862DB1E86E007515C6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -484,6 +603,62 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Ahavat Yeshua";
+			};
+			name = Release;
+		};
+		086EE08A2DB1E86E007515C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25DZPJJA4Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ahavat Yeshua Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ahavat Yeshua Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ipavlov.Ahavat-Yeshua.Ahavat-Yeshua-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		086EE08B2DB1E86E007515C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25DZPJJA4Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ahavat Yeshua Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ahavat Yeshua Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ipavlov.Ahavat-Yeshua.Ahavat-Yeshua-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -609,6 +784,7 @@
 		08AB17412ABBCCE400813AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -646,6 +822,7 @@
 		08AB17422ABBCCE400813AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -688,6 +865,15 @@
 			buildConfigurations = (
 				081715B42B87DEAA00CBC667 /* Debug */,
 				081715B52B87DEAA00CBC667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		086EE0892DB1E86E007515C6 /* Build configuration list for PBXNativeTarget "Ahavat Yeshua WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086EE08A2DB1E86E007515C6 /* Debug */,
+				086EE08B2DB1E86E007515C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
