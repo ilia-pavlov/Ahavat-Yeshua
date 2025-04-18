@@ -19,7 +19,7 @@ struct ContentView: View {
             BibleStudyView()
                 .tabItem { TabBarItem(icon: .book) }
             
-            TodoView()
+            FeedView()
                 .tabItem { TabBarItem(icon: .feed) }
             
             ExploreView()

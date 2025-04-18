@@ -39,3 +39,7 @@ struct TabBarItem: View {
         }
     }
 }
+
+#Preview {
+    TabBarItem(icon: .book)
+}

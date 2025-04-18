@@ -25,7 +25,7 @@ struct HomeView: View {
                                        foregroundColor: .green)
                         }
                         
-                        NavigationLink(destination: ProfileView()) {
+                        NavigationLink(destination: ProfileMainView()) {
                             SquareView(iconName: "person.circle",
                                        label: "Profile")
                         }
@@ -61,9 +61,8 @@ struct HomeView: View {
                     }
 
                     Text("More Options")
-                        .font(.headline)
+                        .font(.custom("AvenirNext-Bold", size: 20))
                         .padding(.top, 10)
-                        .frame(maxWidth: .infinity, alignment: .leading)
 
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 16) {
