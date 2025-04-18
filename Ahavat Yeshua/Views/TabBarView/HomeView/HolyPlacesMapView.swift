@@ -43,7 +43,7 @@ struct HolyPlacesMapView: View {
                 HStack {
                     Spacer()
                     Button(action: zoomIn) {
-                        Image(systemName: "magnifyingglass.circle.fill")
+                        Image(systemName: "plus.circle.fill")
                             .font(.title)
                             .foregroundColor(.white)
                             .padding()
