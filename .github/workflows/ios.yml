@@ -1,44 +1,60 @@
-name: iOS starter workflow
+name: iOS Build and Test Workflow
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch: # Allow manual triggering of the workflow
+    inputs:
+      build_type:
+        description: "Type of build (e.g., Debug or Release)"
+        required: false
+        default: "Debug"
 
 jobs:
-  build:
-    name: Build and Test default scheme using any available iPhone simulator
+  build-and-test:
+    name: Build and Test using Xcode
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Set Default Scheme
+
+      - name: Set up Xcode
         run: |
-          scheme_list=$(xcodebuild -list -json | tr -d "\n")
-          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
-          echo $default | cat >default
-          echo Using default scheme: $default
+          echo "Available Xcode versions:"
+          xcversion list
+          echo "Using default Xcode version."
+
+      - name: Detect Scheme and Project Type
+        id: detect-scheme
+        run: |
+          if [ -f *.xcworkspace ]; then
+            echo "workspace=$(ls *.xcworkspace | head -n 1)" >> $GITHUB_ENV
+            project_type="workspace"
+          elif [ -f *.xcodeproj ]; then
+            echo "project=$(ls *.xcodeproj | head -n 1)" >> $GITHUB_ENV
+            project_type="project"
+          else
+            echo "No Xcode project or workspace found."
+            exit 1
+          fi
+          scheme=$(xcodebuild -list -json | ruby -e "require 'json'; puts JSON.parse(STDIN.read)['project']['schemes'][0]")
+          echo "scheme=$scheme" >> $GITHUB_ENV
+          echo "Detected scheme: $scheme"
+          echo "Detected project type: $project_type"
+
       - name: Build
-        env:
-          scheme: ${{ 'default' }}
-          platform: ${{ 'iOS Simulator' }}
         run: |
-          # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
-          device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}' | sed -e "s/ Simulator$//"`
-          if [ $scheme = default ]; then scheme=$(cat default); fi
-          if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
-          file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
-          xcodebuild build-for-testing -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
+          xcodebuild build-for-testing \
+            -scheme "$scheme" \
+            -destination "platform=iOS Simulator,name=$(xcrun simctl list devices available | grep -m1 'iPhone' | awk -F '[()]' '{print $2}')" \
+            -$project_type "${{ env.workspace || env.project }}"
+
       - name: Test
-        env:
-          scheme: ${{ 'default' }}
-          platform: ${{ 'iOS Simulator' }}
         run: |
-          # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
-          device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}' | sed -e "s/ Simulator$//"`
-          if [ $scheme = default ]; then scheme=$(cat default); fi
-          if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
-          file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
-          xcodebuild test-without-building -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
+          xcodebuild test-without-building \
+            -scheme "$scheme" \
+            -destination "platform=iOS Simulator,name=$(xcrun simctl list devices available | grep -m1 'iPhone' | awk -F '[()]' '{print $2}')" \
+            -$project_type "${{ env.workspace || env.project }}"
