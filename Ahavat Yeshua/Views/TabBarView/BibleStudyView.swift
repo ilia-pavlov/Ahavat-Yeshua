@@ -75,11 +75,11 @@ struct BibleStudyView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
+                    Button {
                         withAnimation {
                             editMode?.wrappedValue = editMode?.wrappedValue == .active ? .inactive : .active
                         }
-                    }) {
+                    } label: {
                         Text(editMode?.wrappedValue == .active ? "Done" : "Edit")
                             .padding(.horizontal, 12)
                             .padding(.vertical, 6)

@@ -34,7 +34,6 @@
 		08AB17542ABBD96700813AA4 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17532ABBD96700813AA4 /* WebView.swift */; };
 		08AB175A2ABBE37300813AA4 /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17592ABBE37300813AA4 /* WebViewRepresentable.swift */; };
 		08AB175E2ABBEFF700813AA4 /* BibleReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB175D2ABBEFF700813AA4 /* BibleReadingView.swift */; };
-		08AB17602ABBF02D00813AA4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB175F2ABBF02D00813AA4 /* ProfileView.swift */; };
 		08AB17622ABBF03F00813AA4 /* DonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17612ABBF03F00813AA4 /* DonationView.swift */; };
 		08AB17642ABBF04E00813AA4 /* LiveStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17632ABBF04E00813AA4 /* LiveStreamView.swift */; };
 		08AB17662ABBF95A00813AA4 /* ChurchInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17652ABBF95A00813AA4 /* ChurchInformationView.swift */; };
@@ -120,7 +119,6 @@
 		08AB17532ABBD96700813AA4 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		08AB17592ABBE37300813AA4 /* WebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRepresentable.swift; sourceTree = "<group>"; };
 		08AB175D2ABBEFF700813AA4 /* BibleReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleReadingView.swift; sourceTree = "<group>"; };
-		08AB175F2ABBF02D00813AA4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		08AB17612ABBF03F00813AA4 /* DonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationView.swift; sourceTree = "<group>"; };
 		08AB17632ABBF04E00813AA4 /* LiveStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamView.swift; sourceTree = "<group>"; };
 		08AB17652ABBF95A00813AA4 /* ChurchInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchInformationView.swift; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 		086EE0952DB29540007515C6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				08AB175F2ABBF02D00813AA4 /* ProfileView.swift */,
 				086EE0962DB29561007515C6 /* ProfileMainView.swift */,
 			);
 			path = Profile;
@@ -568,7 +565,6 @@
 				08AB17802ABD351600813AA4 /* BibleVerseModel.swift in Sources */,
 				086EE06A2DB1CB90007515C6 /* SelectionSummaryView.swift in Sources */,
 				086EE0942DB2943B007515C6 /* FeedView.swift in Sources */,
-				08AB17602ABBF02D00813AA4 /* ProfileView.swift in Sources */,
 				086EE0652DB1C876007515C6 /* TodoView.swift in Sources */,
 				08AB17842ABD360900813AA4 /* BibleVerseView.swift in Sources */,
 				08AB17862ABD397800813AA4 /* BibleVerseViewModel.swift in Sources */,
