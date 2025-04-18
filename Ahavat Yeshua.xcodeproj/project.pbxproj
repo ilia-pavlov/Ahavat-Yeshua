@@ -23,6 +23,7 @@
 		086EE0942DB2943B007515C6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0932DB2943B007515C6 /* FeedView.swift */; };
 		086EE0972DB29561007515C6 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0962DB29561007515C6 /* ProfileMainView.swift */; };
 		086EE0992DB2ACD6007515C6 /* FeedMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0982DB2ACD6007515C6 /* FeedMock.swift */; };
+		086EE09B2DB2BC82007515C6 /* DevMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE09A2DB2BC82007515C6 /* DevMenuView.swift */; };
 		08AB17362ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17352ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift */; };
 		08AB17382ABBCCE300813AA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB17372ABBCCE300813AA4 /* ContentView.swift */; };
 		08AB173A2ABBCCE400813AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AB17392ABBCCE400813AA4 /* Assets.xcassets */; };
@@ -108,6 +109,7 @@
 		086EE0932DB2943B007515C6 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		086EE0962DB29561007515C6 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
 		086EE0982DB2ACD6007515C6 /* FeedMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMock.swift; sourceTree = "<group>"; };
+		086EE09A2DB2BC82007515C6 /* DevMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevMenuView.swift; sourceTree = "<group>"; };
 		08AB17322ABBCCE300813AA4 /* Ahavat Yeshua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ahavat Yeshua.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AB17352ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ahavat_YeshuaApp.swift; sourceTree = "<group>"; };
 		08AB17372ABBCCE300813AA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -261,10 +263,10 @@
 				08AB174A2ABBD04100813AA4 /* Foundation */,
 				08AB17432ABBCF0F00813AA4 /* Views */,
 				08AB17352ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift */,
-				086EE0642DB1C876007515C6 /* TodoView.swift */,
 				08AB17372ABBCCE300813AA4 /* ContentView.swift */,
 				08AB17392ABBCCE400813AA4 /* Assets.xcassets */,
 				08AB173B2ABBCCE400813AA4 /* Preview Content */,
+				086EE09A2DB2BC82007515C6 /* DevMenuView.swift */,
 			);
 			path = "Ahavat Yeshua";
 			sourceTree = "<group>";
@@ -280,6 +282,7 @@
 		08AB17432ABBCF0F00813AA4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				086EE0642DB1C876007515C6 /* TodoView.swift */,
 				086EE0922DB29429007515C6 /* ExploreView */,
 				086EE0912DB29422007515C6 /* FeedView */,
 				08AB175C2ABBEFE400813AA4 /* HomeView */,
@@ -553,6 +556,7 @@
 				08AB17382ABBCCE300813AA4 /* ContentView.swift in Sources */,
 				08AB175E2ABBEFF700813AA4 /* BibleReadingView.swift in Sources */,
 				086EE0902DB29262007515C6 /* BibleLabel.swift in Sources */,
+				086EE09B2DB2BC82007515C6 /* DevMenuView.swift in Sources */,
 				08E629202ADF649100891626 /* RequestMaking.swift in Sources */,
 				08AB17782ABD294100813AA4 /* EmailInputView.swift in Sources */,
 				08AB17712ABD1B2200813AA4 /* ChurchInfoContext.swift in Sources */,
