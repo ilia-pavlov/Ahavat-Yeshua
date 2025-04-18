@@ -41,8 +41,6 @@ struct Ahavat_Yeshua_WidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        ZStack {
-            Color(#colorLiteral(red: 0.078, green: 0.122, blue: 0.157, alpha: 1)) // #141f28
             VStack {
                 Text(entry.configuration.favoriteEmoji)
                     .font(.headline)
@@ -52,7 +50,6 @@ struct Ahavat_Yeshua_WidgetEntryView : View {
                     .font(.caption)
             }
             .padding()
-        }
     }
 }
 
