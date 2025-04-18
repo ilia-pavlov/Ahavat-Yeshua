@@ -17,9 +17,19 @@ struct BibleStudyView: View {
             )
             .edgesIgnoringSafeArea(.all)
             
+            
             VStack {
-                Text("Faith and Knowledge")
-                    .font(.largeTitle)
+                VStack(spacing: 4) {
+                    Text(" Growth in Faith")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.primary)
+                    Text("צמיחה באמונה")
+                        .foregroundStyle(.black)
+                        .foregroundColor(.secondary)
+                }
+                .multilineTextAlignment(.center)
+                
                 List {
                     Section {
                         Link(destination: URL(string: "https://www.youtube.com/watch?v=zVLKnHs5nFY&list=PLqF5Pt_yMO7lcUN6hHO1udbYfAXaeDdJc")!) {

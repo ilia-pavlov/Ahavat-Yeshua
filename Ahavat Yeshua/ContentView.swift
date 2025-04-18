@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showSplash = true
     @State private var isTabBarHidden = false
     
     var body: some View {
@@ -23,6 +24,10 @@ struct ContentView: View {
             
             ExploreView()
                 .tabItem { TabBarItem(icon: .globe) }
+        }
+        .onAppear {
+            // Hide tab bar initially if needed
+            isTabBarHidden = false
         }
     }
 }

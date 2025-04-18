@@ -111,16 +111,24 @@ struct CongratulationsView: View {
 
 
 struct FireworksView: View {
+    @State private var rotate = false
+    @State private var scale = false
+    
     var body: some View {
         Image(systemName: "sparkles")
             .font(.largeTitle)
             .foregroundColor(.yellow)
-            .rotationEffect(.degrees(15))
-            .scaleEffect(1.5)
-            .animation(
-                Animation.easeInOut(duration: 1)
-                    .repeatForever(autoreverses: true)
-            )
+            .rotationEffect(.degrees(rotate ? 15 : -15)) // Rotate back and forth
+            .scaleEffect(scale ? 1.5 : 1) // Scale up and down
+            .onAppear {
+                withAnimation(
+                    Animation.easeInOut(duration: 1)
+                        .repeatForever(autoreverses: true)
+                ) {
+                    rotate.toggle()
+                    scale.toggle()
+                }
+            }
     }
 }
 
