@@ -54,7 +54,6 @@ struct BibleVerseView: View {
                     }
                 }
             }
-
         }
         .padding()
         .alert(isPresented: $viewModel.showAlert) {

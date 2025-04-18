@@ -10,7 +10,8 @@ import SwiftUI
 
 struct ExploreView: View {
     var body: some View {
-        WebView(url: "https://chat.openai.com/#")
+//        WebView(url: "https://chat.openai.com/#")
+        TodoView()
     }
 }
 
