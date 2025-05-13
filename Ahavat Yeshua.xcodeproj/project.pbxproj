@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		081715AF2B87DEAA00CBC667 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081715AE2B87DEAA00CBC667 /* UITests.swift */; };
 		086EE0652DB1C876007515C6 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0642DB1C876007515C6 /* TodoView.swift */; };
 		086EE0672DB1CA17007515C6 /* MultiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0662DB1CA17007515C6 /* MultiSelectionView.swift */; };
 		086EE06A2DB1CB90007515C6 /* SelectionSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086EE0692DB1CB90007515C6 /* SelectionSummaryView.swift */; };
@@ -63,19 +62,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		081715B22B87DEAA00CBC667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08AB172A2ABBCCE300813AA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 08AB17312ABBCCE300813AA4;
-			remoteInfo = "Ahavat Yeshua";
-		};
 		086EE0862DB1E86E007515C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08AB172A2ABBCCE300813AA4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 086EE0732DB1E86C007515C6;
 			remoteInfo = "Ahavat Yeshua WidgetExtension";
+		};
+		0889D01E2DD2C70C00ED90DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08AB172A2ABBCCE300813AA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08AB17312ABBCCE300813AA4;
+			remoteInfo = "Ahavat Yeshua";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -94,8 +93,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		081715AC2B87DEAA00CBC667 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		081715AE2B87DEAA00CBC667 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		086EE0642DB1C876007515C6 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		086EE0662DB1CA17007515C6 /* MultiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionView.swift; sourceTree = "<group>"; };
 		086EE0692DB1CB90007515C6 /* SelectionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSummaryView.swift; sourceTree = "<group>"; };
@@ -118,6 +115,7 @@
 		086EE0A02DB2C0A6007515C6 /* HolyPlacesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyPlacesMapView.swift; sourceTree = "<group>"; };
 		086EE0A22DB2C0B2007515C6 /* MiniChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengesView.swift; sourceTree = "<group>"; };
 		086EE0A42DB2C64F007515C6 /* HolyLandData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyLandData.swift; sourceTree = "<group>"; };
+		0889D0182DD2C70C00ED90DA /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AB17322ABBCCE300813AA4 /* Ahavat Yeshua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ahavat Yeshua.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AB17352ABBCCE300813AA4 /* Ahavat_YeshuaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ahavat_YeshuaApp.swift; sourceTree = "<group>"; };
 		08AB17372ABBCCE300813AA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -153,20 +151,24 @@
 		08E629252ADF6B8C00891626 /* Fetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetching.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0889D0192DD2C70C00ED90DA /* UITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		081715A92B87DEAA00CBC667 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		086EE0712DB1E86C007515C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				086EE0792DB1E86C007515C6 /* SwiftUI.framework in Frameworks */,
 				086EE0772DB1E86C007515C6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0889D0152DD2C70C00ED90DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,14 +182,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		081715AD2B87DEAA00CBC667 /* UITests */ = {
-			isa = PBXGroup;
-			children = (
-				081715AE2B87DEAA00CBC667 /* UITests.swift */,
-			);
-			path = UITests;
-			sourceTree = "<group>";
-		};
 		086EE0682DB1CB68007515C6 /* Multi-selection */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,8 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				08AB17342ABBCCE300813AA4 /* Ahavat Yeshua */,
-				081715AD2B87DEAA00CBC667 /* UITests */,
 				086EE07A2DB1E86C007515C6 /* Ahavat Yeshua Widget */,
+				0889D0192DD2C70C00ED90DA /* UITests */,
 				086EE0752DB1E86C007515C6 /* Frameworks */,
 				08AB17332ABBCCE300813AA4 /* Products */,
 			);
@@ -261,8 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				08AB17322ABBCCE300813AA4 /* Ahavat Yeshua.app */,
-				081715AC2B87DEAA00CBC667 /* UITests.xctest */,
 				086EE0742DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension.appex */,
+				0889D0182DD2C70C00ED90DA /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -406,24 +400,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		081715AB2B87DEAA00CBC667 /* UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 081715B62B87DEAA00CBC667 /* Build configuration list for PBXNativeTarget "UITests" */;
-			buildPhases = (
-				081715A82B87DEAA00CBC667 /* Sources */,
-				081715A92B87DEAA00CBC667 /* Frameworks */,
-				081715AA2B87DEAA00CBC667 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				081715B32B87DEAA00CBC667 /* PBXTargetDependency */,
-			);
-			name = UITests;
-			productName = UITests;
-			productReference = 081715AC2B87DEAA00CBC667 /* UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		086EE0732DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 086EE0892DB1E86E007515C6 /* Build configuration list for PBXNativeTarget "Ahavat Yeshua WidgetExtension" */;
@@ -440,6 +416,29 @@
 			productName = "Ahavat Yeshua WidgetExtension";
 			productReference = 086EE0742DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		0889D0172DD2C70C00ED90DA /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0889D0202DD2C70C00ED90DA /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				0889D0142DD2C70C00ED90DA /* Sources */,
+				0889D0152DD2C70C00ED90DA /* Frameworks */,
+				0889D0162DD2C70C00ED90DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0889D01F2DD2C70C00ED90DA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0889D0192DD2C70C00ED90DA /* UITests */,
+			);
+			name = UITests;
+			packageProductDependencies = (
+			);
+			productName = UITests;
+			productReference = 0889D0182DD2C70C00ED90DA /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		08AB17312ABBCCE300813AA4 /* Ahavat Yeshua */ = {
 			isa = PBXNativeTarget;
@@ -467,15 +466,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					081715AB2B87DEAA00CBC667 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 08AB17312ABBCCE300813AA4;
-					};
 					086EE0732DB1E86C007515C6 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					0889D0172DD2C70C00ED90DA = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 08AB17312ABBCCE300813AA4;
 					};
 					08AB17312ABBCCE300813AA4 = {
 						CreatedOnToolsVersion = 15.0;
@@ -496,25 +495,25 @@
 			projectRoot = "";
 			targets = (
 				08AB17312ABBCCE300813AA4 /* Ahavat Yeshua */,
-				081715AB2B87DEAA00CBC667 /* UITests */,
 				086EE0732DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension */,
+				0889D0172DD2C70C00ED90DA /* UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		081715AA2B87DEAA00CBC667 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		086EE0722DB1E86C007515C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				086EE0842DB1E86E007515C6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0889D0162DD2C70C00ED90DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,14 +529,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		081715A82B87DEAA00CBC667 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				081715AF2B87DEAA00CBC667 /* UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		086EE0702DB1E86C007515C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,6 +537,13 @@
 				086EE0822DB1E86C007515C6 /* AppIntent.swift in Sources */,
 				086EE07C2DB1E86C007515C6 /* Ahavat_Yeshua_WidgetBundle.swift in Sources */,
 				086EE0802DB1E86C007515C6 /* Ahavat_Yeshua_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0889D0142DD2C70C00ED90DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,55 +599,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		081715B32B87DEAA00CBC667 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 08AB17312ABBCCE300813AA4 /* Ahavat Yeshua */;
-			targetProxy = 081715B22B87DEAA00CBC667 /* PBXContainerItemProxy */;
-		};
 		086EE0872DB1E86E007515C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 086EE0732DB1E86C007515C6 /* Ahavat Yeshua WidgetExtension */;
 			targetProxy = 086EE0862DB1E86E007515C6 /* PBXContainerItemProxy */;
 		};
+		0889D01F2DD2C70C00ED90DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08AB17312ABBCCE300813AA4 /* Ahavat Yeshua */;
+			targetProxy = 0889D01E2DD2C70C00ED90DA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		081715B42B87DEAA00CBC667 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 25DZPJJA4Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ipavlov.UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Ahavat Yeshua";
-			};
-			name = Debug;
-		};
-		081715B52B87DEAA00CBC667 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 25DZPJJA4Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ipavlov.UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Ahavat Yeshua";
-			};
-			name = Release;
-		};
 		086EE08A2DB1E86E007515C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -703,6 +665,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0889D0212DD2C70C00ED90DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25DZPJJA4Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipavlov.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ahavat Yeshua";
+			};
+			name = Debug;
+		};
+		0889D0222DD2C70C00ED90DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25DZPJJA4Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipavlov.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ahavat Yeshua";
 			};
 			name = Release;
 		};
@@ -828,7 +826,6 @@
 		08AB17412ABBCCE400813AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -867,7 +864,6 @@
 		08AB17422ABBCCE400813AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -906,20 +902,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		081715B62B87DEAA00CBC667 /* Build configuration list for PBXNativeTarget "UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				081715B42B87DEAA00CBC667 /* Debug */,
-				081715B52B87DEAA00CBC667 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		086EE0892DB1E86E007515C6 /* Build configuration list for PBXNativeTarget "Ahavat Yeshua WidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				086EE08A2DB1E86E007515C6 /* Debug */,
 				086EE08B2DB1E86E007515C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0889D0202DD2C70C00ED90DA /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0889D0212DD2C70C00ED90DA /* Debug */,
+				0889D0222DD2C70C00ED90DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

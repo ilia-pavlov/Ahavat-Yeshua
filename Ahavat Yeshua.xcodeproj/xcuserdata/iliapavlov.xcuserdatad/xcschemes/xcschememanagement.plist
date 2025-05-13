@@ -7,12 +7,30 @@
 		<key>Ahavat Yeshua WidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Ahavat Yeshua.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>086EE0732DB1E86C007515C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0889D0172DD2C70C00ED90DA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>08AB17312ABBCCE300813AA4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
