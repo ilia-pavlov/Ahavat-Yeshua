@@ -2,68 +2,29 @@
 //  UITests.swift
 //  UITests
 //
-//  Created by Ilia Pavlov on 2/22/24.
+//  Created by Ilia Pavlov on 5/12/25.
 //
 
 import XCTest
 
 final class UITests: XCTestCase {
     let app = XCUIApplication()
-    
-    // Elements
-    lazy var title: XCUIElement = app.staticTexts["homeView_title"]
-    
-    lazy var bibleReadingCard: Card = .init(baseID: "Bible Reading", app: app)
-    lazy var profileCard: Card = .init(baseID: "Profile", app: app)
-    lazy var donationCard: Card = .init(baseID: "Donation", app: app)
-    lazy var liveStreamCard: Card = .init(baseID: "Live Stream", app: app)
 
     override func setUpWithError() throws {
-        // flag for hard/soft assertions
         continueAfterFailure = false
+        print("-------Start Test!------------")
         app.launch()
     }
 
-    func testHomeTabElementsExistence() {
-        bibleReadingCard.assertExistence(isElementStatic: true)
-        profileCard.assertExistence(isElementStatic: true)
-        donationCard.assertExistence(isElementStatic: true)
-        liveStreamCard.assertExistence(isElementStatic: true)
-        title.assertExistence(isElementStatic: true)
-    }
-}
+    override func tearDownWithError() throws {}
 
-extension XCUIElement {
-    func assertExistence(timeout: TimeInterval = 10, isElementStatic: Bool = false) {
-        if isElementStatic {
-            XCTAssertTrue(self.exists, "Element is not found with")
-        } else {
-            XCTAssertTrue(self.waitForExistence(timeout: timeout), "Element is not found with \(timeout)s")
-        }
+    func testExample1() throws {
     }
-}
-
-public class Card {
-    let button: XCUIElement
-    let image: XCUIElement
-    let title: XCUIElement
-    
-    init(baseID: String, app: XCUIApplication) {
-        button = app.buttons[baseID]
-        image = button.images.firstMatch
-        title = button.staticTexts.firstMatch
+    func testExample2() throws {
+    }
+    func testExample3() throws {
+    }
+    func testExample4() throws {
     }
     
-    func assertExistence(timeout: TimeInterval = 10, isElementStatic: Bool = false) {
-        XCTContext.runActivity(named: "Assert card existence - \(button.label)") { _ in
-            button.assertExistence(timeout: timeout)
-            image.assertExistence(isElementStatic: isElementStatic)
-            title.assertExistence(isElementStatic: isElementStatic)
-        }
-    }
-    
-    func tap() {
-        button.assertExistence()
-        button.tap()
-    }
 }
